@@ -1,3 +1,3 @@
 0.upto(9) do
-	puts "Maetamong:D"
+	puts "I Love Maetamong:D"
 end
