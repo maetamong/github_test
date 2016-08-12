@@ -5,11 +5,11 @@ class FoodsController < ApplicationController
 
   def posts_category
 		case params[:category]
-		when "한식"
+		when "korean"
 			@category = "한식"
-		when "일식"
+		when "japanese"
 			@category = "일식"
-		when "중식"
+		when "chinese"
 			@category = "중식"
 		else
 			@category = "양식"
@@ -18,6 +18,7 @@ class FoodsController < ApplicationController
   end
 
   def show
+		@post = Post.find(params[:id])
   end
 
   def write
