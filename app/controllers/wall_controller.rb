@@ -14,7 +14,7 @@ class WallController < ApplicationController
 		end	
 	end
 
-	def wirte_comment
+	def write_comment
 		@post_comment = Post.find(params[:id])
 	end
 
@@ -26,6 +26,7 @@ class WallController < ApplicationController
 		c.save
 		
 		redirect_to "/wall/posts"
+	end
 
 	def edit
 		@post_edit = Post.find(params[:id])
