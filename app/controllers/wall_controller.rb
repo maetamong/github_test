@@ -34,7 +34,7 @@ class WallController < ApplicationController
 		@post_delete = Post.find(params[:id])
 	end
 
-	def delete complete
+	def delete_complete
 		p	= Post.find(params[:id])
 		p.destroy
 

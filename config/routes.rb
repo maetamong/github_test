@@ -9,4 +9,5 @@ Timeline::Application.routes.draw do
 	get "wall/edit/:id" => 'wall#edit'
 	post	"wall/edit_complete"
 	get "wall/delete/:id" => 'wall#delete'
+	post "wall/delete_complete"
 end
