@@ -11,6 +11,7 @@ class WallController < ApplicationController
 		else 
 			flash[:alert] = p.errors[:content][0]
 			redirect_to :back
+		end	
 	end
 
 	def posts

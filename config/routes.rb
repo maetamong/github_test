@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 end
 
 Timeline::Application.routes.draw do
-  get 'wall/write' => 'wall#write'
-  post 'wall/posts' => 'wall#posts'
+  get "wall/write"
+  post "wall/write_complete"
+	get "wall/posts"
 end
