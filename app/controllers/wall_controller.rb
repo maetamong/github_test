@@ -14,6 +14,10 @@ class WallController < ApplicationController
 		end	
 	end
 
+	def wirte_comment
+		@post_comment = Post.find(params[:id])
+	end
+
 	def edit
 		@post_edit = Post.find(params[:id])
 	end
