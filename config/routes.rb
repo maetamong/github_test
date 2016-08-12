@@ -7,4 +7,5 @@ Timeline::Application.routes.draw do
   post "wall/write_complete"
 	get "wall/posts"
 	get "wall/edit/:id" => 'wall#edit'
+	post	"wall/edit_complete"
 end
