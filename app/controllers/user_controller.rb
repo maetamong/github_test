@@ -5,7 +5,7 @@ class UserController < ApplicationController
 	def signup_complete
 		u = User.new
 		u.username = params[:username]
-		if params[:password] == params [:retype_password]
+		if params[:password] == params[:retype_password]
 			u.password = params[:password]
 			if u.save
 				flash[:alert] = "Successfully signed up."

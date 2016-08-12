@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
-  get 'user/signup'
-
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
 
 Timeline::Application.routes.draw do
-  get 'user/signup'
+  get "user/signup"
+	post "user/signup_complete"
   get "wall/write"
   post "wall/write_complete"
 	get "wall/posts"
