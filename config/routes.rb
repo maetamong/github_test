@@ -13,6 +13,6 @@ Gourmet::Application.routes.draw do
   post 'foods/edit_complete'
   get 'foods/delete_complete/:id' => 'foods#delete_complete'
 	post 'foods/write_comment_complete'
-	get 'foods/delete_comment_complete/:id"' => 'foods#delete_comment_complete'
+	get 'foods/delete_comment_complete/:id' => 'foods#delete_comment_complete'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
